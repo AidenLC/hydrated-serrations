@@ -1,0 +1,16 @@
+// weather in kelvin
+const kelvin = 0;
+// weather forecast in celsius
+const celsius = kelvin - 273;
+// weather in fahrenheit
+let fahrenheit = celsius * (9/5) + 32;
+// weather in newton
+let newton = celsius * (33/100);
+// rounds down result of fahrenheit formula
+fahrenheit = Math.floor(fahrenheit);
+// rounds down result of newton formula
+newton = Math.floor(newton);
+// logs fahrenheit value to console screen
+console.log('The temperature is ' + fahrenheit + ' degrees Fahrenheit.');
+// logs newton value to console screen
+console.log(`The temperature is ${newton} degrees Newton.`);
