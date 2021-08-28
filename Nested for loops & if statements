@@ -1,0 +1,17 @@
+let input = 'Nested for loops & if statements!';
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+let resultArray = [];
+for (let index = 0; index < input.length; index++) {
+  for (let vowel = 0; vowel < vowels.length; vowel++) {
+    if (input[index] === vowels[vowel]) {
+      if (input[index] === 'e') {
+        resultArray.push('ee');
+      } else if (input[index] === 'u') {
+        resultArray.push('uu');
+      } else {
+        resultArray.push(input[index]);
+      }
+    }
+  }
+};
+console.log(resultArray.join('').toUpperCase());
